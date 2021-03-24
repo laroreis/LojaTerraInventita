@@ -10,6 +10,6 @@ import com.laroproducoes.TerraInventiva.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 	
-	public List<Categoria> findAllByNomeContainingIgnoreCase(String nome);
+	public List<Categoria> findAllByDestaqueContainingIgnoreCase(String destaque);
 
 }
